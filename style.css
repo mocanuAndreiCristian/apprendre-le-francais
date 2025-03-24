@@ -1,0 +1,123 @@
+body {
+    background-color: #fff1de;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #ffd9a3;
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 1vh 2vw;
+    text-align: center;
+    box-shadow: -1px 4px 8px 0px rgba(64, 64, 64, 0.75);
+    -webkit-box-shadow: -1px 4px 8px 0px rgba(64, 64, 64, 0.75);
+    -moz-box-shadow: -1px 4px 8px 0px rgba(64, 64, 64, 0.75);
+}
+
+header a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.25em;
+    margin-right: 2.5vw;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+main {
+    padding: 3em 10vw;
+}
+
+img {
+    float: right;
+    width: 40vw;
+}
+
+.boss-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.container {
+    background-color: #ffd9a3;
+    border-radius: 16px;
+    padding-inline: 1em;
+    padding-bottom: 1em;
+    margin-inline: auto;
+    width: 45%;
+    margin: 1em;
+    box-shadow: -1px 4px 8px 0px rgba(64, 64, 64, 0.75);
+    -webkit-box-shadow: -1px 4px 8px 0px rgba(64, 64, 64, 0.75);
+    -moz-box-shadow: -1px 4px 8px 0px rgba(64, 64, 64, 0.75);
+}
+
+.container > h2 {
+    text-align: center;
+    background-image: url("img/fr-flag.png");
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    padding: 0.5em 0;
+    box-sizing: border-box;
+    width: calc(100% + 1.4em);
+    margin-left: -0.7em;
+}
+
+.container > h2 > mark {
+    background-color: #ffffff;
+    padding: 0.5% 1%;
+    border-radius: 4px;
+}
+
+.container > img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 2em;
+}
+
+body::selection {
+    background-color: #ffd9a3;
+}
+
+.container::selection {
+    background-color: #fff1de;
+}
+
+#attractions {
+    width: 100%;
+}
+
+header::selection {
+    background-color: #fff1de;
+}
+
+@media (max-width: 1590px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    header > a {
+        margin-right: 5vw;
+    }
+    .boss-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    img {
+        float: none;
+        width: 100%;
+    }
+}
