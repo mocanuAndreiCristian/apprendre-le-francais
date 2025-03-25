@@ -92,10 +92,6 @@ body::selection {
     background-color: #fff1de;
 }
 
-#attractions {
-    width: 100%;
-}
-
 header::selection {
     background-color: #fff1de;
 }
